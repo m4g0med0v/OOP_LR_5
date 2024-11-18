@@ -20,6 +20,5 @@ repos:
         args:
           - --strict
           - --ignore-missing-imports
-          - --explicit-package-bases
-          - --exclude
-          - '.*(tests|__init__\.py)$'
+        additional_dependencies: [types-pyyaml]
+        exclude: ^tests
